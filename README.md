@@ -7,4 +7,5 @@ Este es un repositorio de ideas y laboratorios de apoyo para sus estudios.
 
 | Laboratorio | Descripción | 
 | -------- | -------- | 
+| [Requisitos](https://github.com/CommunityBootcamp/Maratona-BOTs/blob/master/RequisitosES.md)    | Requisitos de programación
 | [QuickStart](https://github.com/CommunityBootcamp/Bots-Diplomado/tree/master/QuickStartES)     | Configuración de entorno de desarrollo en C #   | 
