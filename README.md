@@ -7,4 +7,4 @@ Este es un repositorio de ideas y laboratorios de apoyo para sus estudios.
 
 | Laboratorio | Descripción | 
 | -------- | -------- | 
-| [QuickStart](https://github.com/CommunityBootcamp/Maratona-BOTs/tree/master/QuickStartES)     | Configuración de entorno de desarrollo en C #   | 
+| [QuickStart](https://github.com/CommunityBootcamp/Bots-Diplomado/tree/master/QuickStartES)     | Configuración de entorno de desarrollo en C #   | 
