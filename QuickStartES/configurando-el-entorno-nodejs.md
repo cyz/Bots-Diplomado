@@ -2,32 +2,32 @@ El Bot Builder SDK para Node.js es un marco para el desarrollo de bots. Es fáci
 
 Este tutorial le ayudará a configurar su entorno y construir un bot simple mediante el SDK de Bot Builder a Node.js. Usted puede probar el bot en una ventana de consola y con el Bot Framework Emulator.
 
-Una firma de Microsoft Azure es necesaria para usar el Azure Bot Service. Si aún no tiene una firma, es posible registrarse para [**Trial Gratuito**](https://aka.ms/bots-azure-free).
+Una cuenta de Microsoft Azure es necesaria para poder usar  el servicio de Azure Bot Service. Si aún no tiene una cuenta activa, es posible registrarse para una en [**Trial Gratuito**](https://aka.ms/bots-azure-free).
 
-## Pré-requisitos:
-* Instalar o [Node.js](https://nodejs.org/) em sua máquina
-* Instalar o [Bot Emulator](http://emulator.botframework.com/)
-* Instalar o [Visual Studio Code](code.visualstudio.com)
-* Criar uma pasta para o seu bot e abri-la no Visual Studio Code
-* No terminal do Visual Studio Code, você deve executar o seguinte comando:
+## Pre-requisitos:
+* Instalar  [Node.js](https://nodejs.org/) em sua máquina
+* Instalar  [Bot Emulator](http://emulator.botframework.com/)
+* Instalar  [Visual Studio Code](code.visualstudio.com)
+* Crear una carpeta para su bot y abrirla en Visual Studio Code.
+* En la terminal de Visual Studio Code, debe ejecutar el comando siguiente:
 ```javascript=
 npm init
 ```
 
-Siga os passos que irão aparecer no prompt e adicione as informações para o npm crie um o  arquivo **package.json**, que irá conter as informações do seu bot.
+Siga los pasos que aparecerán en el indicador y añada la información a npm para crear el archivo ** package.json **, que contendrá la información de su bot..
 
-## Instalando a SDK
-Em seguida, instale o SDK do Bot Builder para Node.js executando o seguinte comando npm:
+## Instalando SDK
+A continuación, instale el SDK de Bot Builder a Node.js ejecutando el siguiente comando npm:
 ```javascript
 npm install --save botbuilder
 ```
 
-Depois de ter o SDK instalado, você está pronto para escrever seu primeiro bot.
+Después de tener el SDK instalado, usted está listo para escribir su primer bot.
 
-Para o seu primeiro bot, você criará um bot que simplesmente responde qualquer entrada do usuário. Para criar o seu bot, siga estas etapas:
+Para su primer bot, usted creará un bot que contesta cualquier entrada del usuario. Para la creación de este, siga estos pasos:
 
-* No mesmo projeto que você está trabalhando no Visual Studio Code, crie um novo arquivo chamado app.js.
-* Com o app.js aberto, adicione o seguinte código ao arquivo:
+* En el mismo proyecto que está trabajando en Visual Studio Code, cree un nuevo archivo llamado app.js.
+* Con el app.js abierto, agregue el código siguiente al archivo:
 
 ```javascript
 var builder = require('botbuilder');
@@ -40,31 +40,31 @@ var bot = new builder.UniversalBot(connector, function (session) {
 
 Salve o arquivo. Agora você está pronto para correr e testar seu bot.
 
-## Iniciando o bot
-Abra novamente o terminal do Visual Studio Code e inicie o seu bot com o seguinte comando:
+## Inicio del bot
+Vuelva a abrir la terminal de Visual Studio Code e inicie su bot con el siguiente comando:
 
 ```javascript
 node app.js
 ```
 
-Seu bot agora está sendo executado localmente. Teste o seu bot digitando algumas mensagens na janela do console. Você deve ver que o bot responde a cada mensagem que você envia fazendo eco de sua mensagem com prefixo com o texto "Você disse:".
+Su bot ahora se está ejecutando localmente. Prueba tu bot escribiendo algunos mensajes en la ventana de la consola. Usted debe ver que el bot responde a cada mensaje que usted envía haciendo eco de su mensaje con el prefijo con el texto "Usted dijo:".
 
 ## Instalando Restify
-Os bots de console são bons clientes baseados em texto, mas para usar qualquer um dos canais do Bot Framework (ou executar o seu bot no emulador), seu bot precisará executar em uma porta de servidor. Para conseguir executar seu bot no emulador ou publicá-lo em algum canal, iremos utilizar a Restify. Em seu terminal, digite o seguinte comando npm:
+Los bots de consola son buenos clientes basados en texto, pero para usar cualquiera de los canales de Bot Framework (o ejecutar su bot en el emulador), su bot debe ejecutarse en un puerto de servidor. Para poder ejecutar su bot en el emulador o publicarlo en algún canal, vamos a utilizar Restify. En su terminal, escriba el siguiente comando npm:
 
 ```javascript
 npm install --save restify
 ```
 
-Uma vez que você tenha o Restify instalado, você está pronto para fazer algumas mudanças no seu bot.
+Una vez que tenga Restify instalado, usted está listo para hacer algunos cambios en su bot.
 
-## Editando seu bot
-Você precisará fazer algumas alterações no seu arquivo **app.js**.
+## Editando su bot
+Usted necesitará hacer algunos cambios en su archivo ** app.js **.
 
-* Adicione uma linha de require para o módulo do restify
-* Mude a chamada ```ConsoleConnector``` para ```ChatConnector```.
-* Inclua suas credenciais de Microsoft App ID e App Password (você pode deixar em branco quando estiver testando localmente).
-* Para instanciar o serviço, você deverá adicionar o seguinte código:
+* Agregue una línea de require al módulo de restify
+* Cambie la llamada `` `ConsoleConnector``` a```ChatConnector` ``. 
+* Incluya sus credenciales de Microsoft App ID y App Password (puede dejar en blanco cuando se está probando localmente).
+* Para instanciar el servicio, debera agregar el siguiente código:
 
 ```javascript
 var restify = require('restify');
@@ -91,10 +91,10 @@ var bot = new builder.UniversalBot(connector, function (session) {
 });
 ```
 
-Salve o arquivo. Agora você está pronto para executar e testar seu bot no emulador.
+Guarde el archivo. Ahora usted está listo para ejecutar y probar su bot en el emulador.
 
-## Teste o seu bot
-Depois de instalar o [Bot Emulator](https://docs.microsoft.com/pt-BR/bot-framework/bot-service-debug-emulator), através do console, navegue até o diretório do seu bot e digite o seguinte comando:
+## Prueba tu bot
+Después de instalar [Bot Emulator] (https://docs.microsoft.com/es-ES/bot-framework/bot-service-debug-emulator), a través de la consola, navegue hasta el directorio de su bot y, a continuación, siguiente comando:
 
 ```javascript
 node app.js
@@ -102,11 +102,11 @@ node app.js
 
 Agora, seu bot está sendo executado localmente.
 
-### Testando o bot no emulador
-Depois de iniciar o seu bot, conecte-se ao seu bot no emulador:
+### Probar el bot en el emulador
+Después de iniciar su bot, conéctate a tu bot en el emulador:
 
-* Digite ```http://localhost:3978/api/messages``` na barra de endereço do Bot Emulator. (Este é o endpoint padrão que o seu bot, quando estiver rodando localmente.)
-* Click em Connect.
+* Escriba `` `http: // localhost: 3978 / api / messages` `` en la barra de direcciones de Bot Emulator. (Este es el punto final predeterminado que su bot cuando se está ejecutando localmente.)
+* Haga clic en Connect.
 
 
-Agora que seu bot está sendo executado localmente e está conectado ao emulador, experimente o seu bot digitando algumas mensagens no emulador. Você deve ver que o bot responde a cada mensagem que você envia fazendo eco de sua mensagem com prefixo com o texto "Você disse:".
+Ahora que su bot se está ejecutando localmente y está conectado al emulador, pruebe su bot escribiendo algunos mensajes en el emulador. Usted debe ver que el bot responde a cada mensaje que usted envía haciendo eco de su mensaje con el prefijo con el texto "Usted dijo:".
