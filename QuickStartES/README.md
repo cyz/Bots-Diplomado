@@ -23,7 +23,7 @@
 
 5. Última versión de Bot Framework Emulator - [**Download**](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
-6. En Visual Studio, crear un nuevo proyecto de C# utilizando la plantilla recién instalada **Bot Application**
+6. En Visual Studio, cree un nuevo proyecto de C# utilizando la plantilla recién instalada **Bot Application**
     >
     > ![](https://raw.githubusercontent.com/CommunityBootcamp/Maratona-BOTs/master/QuickStart/images/06.PNG)
 
